@@ -48,7 +48,7 @@ plt.figure(figsize=[14,6])
 
 plt.plot(spectra1[0,:]+shiftcomp, spectra1[1,:], color = 'red', label = file1, linewidth = 1.0)
 if (file1 != file2):
-	plt.plot(spectra2[0,:], (spectra2[1,:] - np.max(spectra2[1,:])*scatteredlight)*scaling,color = 'blue', label = file2, linewidth = 1.0)
+	plt.plot(spectra2[0,:], (spectra2[1,:] - np.max(spectra2[1,:])*scatteredlight)*scaling,color = 'blue', label = file2, linewidth = 3.0)
 	plt.legend()
 
 plt.xlim([lambda_min,lambda_max])
